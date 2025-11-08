@@ -81,6 +81,12 @@ The main challenge is balancing **false positives** vs **false negatives** — c
 
 ---
 
+---
+## Result 
+![Sample Tumor Detection](Output/Figure/results.png)
+---
+
+
 
 
 ## Quick Start
