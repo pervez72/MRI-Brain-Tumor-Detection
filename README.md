@@ -1,7 +1,3 @@
-
----
-
-```markdown
 # Brain Tumor Detection & Classification using YOLOv8
 
 This repository contains a **Deep Learning–based Brain Tumor Detection system** using **YOLOv8**, capable of identifying and classifying four types of brain tumors from MRI scans:
@@ -9,10 +5,7 @@ This repository contains a **Deep Learning–based Brain Tumor Detection system*
 
 The model is trained and evaluated on a curated MRI dataset using **Ultralytics YOLOv8**, achieving **high accuracy**, **robust generalization**, and **real-time detection speed**.
 
----
-
 ## Project Structure
-
 ```
 tumor-detection/
 │
@@ -42,7 +35,6 @@ tumor-detection/
 ```
 
 ---
-
 ## 🚀 Model Performance
 
 | Metric | Value | Description |
@@ -70,86 +62,35 @@ The main challenge is balancing **false positives** vs **false negatives** — c
 
 ---
 
-## Qualitative Results (Sample Predictions)
-
-Predicted images are available in:
-```
-
-data/sample_output/
-outputs/predictions/
-
-````
-
-Each image includes:
-- Bounding box around tumor
-- Class label (Glioma, Meningioma, Pituitary, No Tumor)
-- Confidence score (0.7–0.9 typical range)
+---
+## Dataset
+| Class      | Count |
+|------------|-------|
+| Glioma     | 1,749 |
+| Pituitary  | 1,320 |
+| Meningioma | 1,077 |
+| No Tumor   | 1,005 |
 
 ---
 
-## Dataset Overview
+---
+## Sample Output
+![Sample Tumor Detection](output/prediction/output.png)
 
-The dataset contains MRI images labeled into four categories.  
-It has slight imbalance — **Glioma** being most frequent.
-
-| Class | Instances |
-| :--- | :---: |
-| Glioma | 1749 |
-| Pituitary | 1320 |
-| Meningioma | 1077 |
-| No Tumor | 1005 |
-
-Bounding boxes are generally **small and centered**.
+*Bounding box + class label + confidence score (e.g., Glioma, 0.89)*
 
 ---
 
-## How to Use
 
-### Prerequisites
 
-- Python **3.8+**
-- **PyTorch**
-- **Ultralytics YOLOv8**
-- GPU recommended for training/inference
-
-### Installation
+## Quick Start
 
 ```bash
 git clone https://github.com/your-username/tumor-detection.git
 cd tumor-detection
 pip install -r requirements.txt
-````
-
-### Train Model
-
-You can retrain the model using your dataset:
-
-```bash
-python src/train.py
 ```
-
-Or open the Colab notebook:
-
-```
-notebooks/training.ipynb
-```
-
-### Run Inference
-
-To run the trained YOLOv8 model on any MRI image:
-
-```bash
-python src/detect.py --weights models/yolov8n.pt --source path/to/mri_image.jpg
-```
-
-Outputs are saved in:
-
-```
-outputs/predictions/
-```
-
 ---
-
 ## Future Improvements
 
 * **Enhance Bounding Box Precision:** Apply stronger augmentations (rotation, scaling).
@@ -160,20 +101,32 @@ outputs/predictions/
 ---
 
 ## 🧑‍💻 Author
-
 **Md Pervez Hasan**
-Founder — [AsuX AI](https://github.com/AsuX-AI)
-📍Bangladesh
-   Focused on AI, ML, and solving real-world problems.
-
 ---
-
 ## License
-
 This project is licensed under the **MIT License**.
 Feel free to use, modify, and distribute with proper attribution.
-
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
