@@ -75,7 +75,7 @@ The main challenge is balancing **false positives** vs **false negatives** — c
 
 ---
 ## Sample Output
-![Sample Tumor Detection](output/prediction/output.png)
+![Sample Tumor Detection](Output/Prediction/output.png)
 
 *Bounding box + class label + confidence score (e.g., Glioma, 0.89)*
 
