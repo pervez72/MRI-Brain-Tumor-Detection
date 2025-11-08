@@ -108,11 +108,13 @@ pip install -r requirements.txt
 
 ## 🧑‍💻 Author
 **Md Pervez Hasan**
----
+
+
 ## License
+```
 This project is licensed under the **MIT License**.
 Feel free to use, modify, and distribute with proper attribution.
----
+```
 
 
 
