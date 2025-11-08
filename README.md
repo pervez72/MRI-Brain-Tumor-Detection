@@ -14,7 +14,6 @@ The model is trained and evaluated on a curated MRI dataset using **Ultralytics 
 ## Project Structure
 
 ```
-
 tumor-detection/
 │
 ├── README.md                 # Project overview, setup, usage, and results
@@ -22,9 +21,8 @@ tumor-detection/
 ├── .gitignore                # Ignore unnecessary files
 │
 ├── data/
-│   ├── raw/                  # Original dataset (unmodified)
-│   ├── processed/            # Preprocessed train/test data
-│   └── sample_output/        # Example detection results
+│   ├── dataset/  
+│   
 │
 ├── notebooks/
 │   └── training.ipynb        # Google Colab notebook used for training
@@ -67,8 +65,8 @@ All losses (`box_loss`, `cls_loss`, `dfl_loss`) decreased steadily, and metrics 
 | **Glioma** | 0.93 | 0.92 |
 | **Meningioma** | 0.92 | 0.91 |
 
-🔹 The model shows minimal confusion across tumor types.  
-🔹 The main challenge is balancing **false positives** vs **false negatives** — common in medical imaging tasks.
+The model shows minimal confusion across tumor types.  
+The main challenge is balancing **false positives** vs **false negatives** — common in medical imaging tasks.
 
 ---
 
@@ -105,16 +103,16 @@ Bounding boxes are generally **small and centered**.
 
 ---
 
-## ⚙️ How to Use
+## How to Use
 
-### 🔧 Prerequisites
+### Prerequisites
 
 - Python **3.8+**
 - **PyTorch**
 - **Ultralytics YOLOv8**
 - GPU recommended for training/inference
 
-### 🧩 Installation
+### Installation
 
 ```bash
 git clone https://github.com/your-username/tumor-detection.git
@@ -122,7 +120,7 @@ cd tumor-detection
 pip install -r requirements.txt
 ````
 
-### 🧠 Train Model
+### Train Model
 
 You can retrain the model using your dataset:
 
@@ -136,7 +134,7 @@ Or open the Colab notebook:
 notebooks/training.ipynb
 ```
 
-### 🔍 Run Inference
+### Run Inference
 
 To run the trained YOLOv8 model on any MRI image:
 
@@ -152,7 +150,7 @@ outputs/predictions/
 
 ---
 
-## 📈 Future Improvements
+## Future Improvements
 
 * **Enhance Bounding Box Precision:** Apply stronger augmentations (rotation, scaling).
 * **Reduce False Positives:** Add more background/no-tumor examples.
@@ -177,13 +175,5 @@ Feel free to use, modify, and distribute with proper attribution.
 
 ---
 
-> *“AI won’t replace people — but people using AI will replace those who don’t.”*
 
-```
-
----
-
-Would you like me to now create the **`requirements.txt`** file (with exact YOLOv8 + PyTorch dependencies) for your repo next?  
-That will make your GitHub project **runnable directly** on any system or Colab.
-```
 
